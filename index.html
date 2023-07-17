@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <link rel="stylesheet/less" href="./css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <!-- Header contents ⬇ -->
+    <header>
+        <div class="container">
+          <div class="logo">
+              <a href="."><img src="./images/bmiblue.png" alt=""></a>
+          </div>       
+          <div class="header">
+            <div class="title">
+              <h1>Calculate Your BMI</h1>
+              <p class="description">
+                BMI is a measurement that takes into account your weight and height. 
+                It helps classify individuals into different weight categories.
+              </p>
+              <table>
+                <tr>
+                  <th>BMI</th>
+                  <th>Classification</th>
+                </tr>
+                <tr>
+                  <td>< 18 </td>
+                  <td>Under Weight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9 </td>
+                  <td>Normal</td>
+                </tr>
+                <tr>
+                  <td>25 - 29.9</td>
+                  <td>Over Weight</td>
+                </tr>
+                <tr>
+                  <td>30 - 34.9</td>
+                  <td>Obesity (Class I)</td>
+                </tr>
+                <tr>
+                  <td>35 - 39.9</td>
+                  <td>Obesity (Class II)</td>
+                </tr>
+                <tr>
+                  <td>> 40</td>
+                  <td>Extreme Obesity</td>
+                </tr>
+              </table>
+            </div>
+            
+            <div class="calculator-card">
+              <h3>Please enter your info</h3>
+              <div class="input-data">
+                <div>
+                  <p>Weight</p>
+                  <input type="number" placeholder="(kg)" id="weightInput"/>
+                </div>
+                
+                  <img src="./images/cross-small.png" alt="" class="cross-small" />
+              
+                <div>
+                  <p>Height</p>
+                  <input type="number" placeholder="(cm)" id="heightInput"/>
+                </div>
+              </div>
+              <button>Calculate</button>
+              <div class="result">
+                  <p>BMI: <span id="result"></span></p>
+                  <p>Description:<span id="description"></span></p>
+              </div>   
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- Main contents ⬇ -->
+      <main>
+          <div class="container2">
+            
+              <div class="main">
+                  <div class="sponsors1">
+                    <h4>Monitoring Health Risks</h4>
+                      <p> BMI is often used as an indicator of potential<br> health risks associated with weight.<br>
+                         Higher BMI values are generally associated with an increased<br>
+                         risk of various health conditions like heart disease,<br> 
+                         type 2 diabetes, certain cancers, and musculoskeletal disorders.
+                        </p>
+                  </div> 
+                  <div class="sponsors2">
+                    <h4>Setting Health Goals</h4>
+                      <p>  If your BMI falls outside the normal range, knowing your BMI<br>  can serve as a starting point to set health goals.<br> 
+                         It can help you establish realistic targets for weight management,<br> 
+                         whether it's aiming to reach a healthier weight, maintain your<br>  current weight, or gain weight in the case of being underweight
+                        </p>
+                  </div>
+                  <div class="sponsors3">
+                    <h4>Tracking Progress</h4>
+                      <p> Monitoring changes in your BMI over time can help you track your progress<br> towards achieving your health goals. 
+                        By regularly measuring and recording your BMI,<br> you can assess the effectiveness of your lifestyle choices,<br>
+                         such as diet and exercise, and make necessary adjustments as needed.
+                        </p>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <!-- Footer contents ⬇ -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <p>
+              created by <a href=".">Mariagoretti</a> &copy;
+              <!-- This script updates the copyright year automatically -->
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <!-- <a href=".">BMICalculator</a> -->
+            </p>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/script.js"></script>
+    
+</body>
+</html>
